@@ -1,9 +1,9 @@
-import Image from "next/image";
+import Form from "@/pages/Form";
 
 export default function Home() {
   return (
     <div>
-      <h1>Sparti</h1>
+      <Form />
     </div>
   );
 }
