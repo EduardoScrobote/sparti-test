@@ -7,6 +7,14 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      "primary-black": "#121212",
+      "secondary-black": "#1e1e1e",
+      "text-primary": "#e0e0e0",
+      "text-secondary": "#909090",
+      "blue-primary": "#1d97d9",
+      "blue-secondary": "#4D9BC6",
+    },
     extend: {
       backgroundImage: {},
     },
