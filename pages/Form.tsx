@@ -2,7 +2,6 @@
 import useBreakPoint, { BreakPoint } from "../hooks/useBreakingPoint";
 
 import { GiHamburgerMenu } from "react-icons/gi";
-import Input from "@/components/input/Input";
 import { ImCheckboxUnchecked } from "react-icons/im";
 import { ImCheckboxChecked } from "react-icons/im";
 import Button from "@/components/button/Button";
@@ -15,7 +14,19 @@ export default function Home() {
   const [perishable, setPerishable] = useState(false);
 
   function createData(data: any) {
-    console.log(data, perishable);
+    let formData = new Array();
+
+    const storedData = localStorage.getItem("formData");
+
+    if (storedData) {
+      formData = JSON.parse(storedData);
+    }
+
+    formData.push(data);
+
+    localStorage.setItem("formData", JSON.stringify(formData));
+
+    console.log(formData);
   }
 
   if ([BreakPoint.MOBILE, BreakPoint.TABLET].includes(useBreakPoint())) {
@@ -100,16 +111,12 @@ export default function Home() {
               )}
               <h1 className="text-lg">Produto perecível</h1>
             </div>
-            <label
-              htmlFor="first_name"
-              className="block mb-2 mt-4 text-[16px] font-medium text-gray-900 dark:text-white w-full"
-            >
+            <label className="block mb-2 mt-4 text-[16px] font-medium text-gray-900 dark:text-white w-full">
               Vencimento
             </label>
             <input
-              type="text"
+              type="date"
               className="bg-secondary-black border-gray-300 text-gray-900 text-sm outline-none rounded-lg focus:border-2 focus:border-blue-primary block w-full p-2.5"
-              placeholder="Vencimento"
               required
               {...register("maturity")}
             />
