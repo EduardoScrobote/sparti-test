@@ -11,9 +11,13 @@ import Button from "@/components/button/Button";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { NumericFormat } from "react-number-format";
+import Link from "next/link";
 
 export default function Home() {
   const [hamburguer, setHamburguer] = useState<boolean>(false);
+  const [perishable, setPerishable] = useState(false);
+  const [quantityValue, setQuantityValue] = useState<string>("");
+  const [price, setPrice] = useState<string>("");
 
   const createFormDataSchema = z.object({
     manufacturing: z.coerce
@@ -50,10 +54,6 @@ export default function Home() {
     resolver: zodResolver(createFormDataSchema),
   });
 
-  const [perishable, setPerishable] = useState(false);
-  const [quantityValue, setQuantityValue] = useState<string>("");
-  const [price, setPrice] = useState<string>("");
-
   function createData(data: any) {
     let formData = new Array();
 
@@ -70,12 +70,7 @@ export default function Home() {
     formData.push(data);
 
     localStorage.setItem("formData", JSON.stringify(formData));
-
-    console.log(formData);
-    console.log(quantityValue);
   }
-
-  console.log(errors);
 
   const [unity, setUnity] = useState<string>("kg");
   const [prefix, setPrefix] = useState<string>("kg");
@@ -87,15 +82,13 @@ export default function Home() {
     if (unity == "LT") {
     } else {
       setPrefix("lt");
-      console.log("bug");
     }
   };
 
-  if (hamburguer === true) {
-    <HamburguerMenu />;
-  }
-
-  if ([BreakPoint.MOBILE, BreakPoint.TABLET].includes(useBreakPoint())) {
+  if (
+    [BreakPoint.MOBILE, BreakPoint.TABLET].includes(useBreakPoint()) &&
+    hamburguer === false
+  ) {
     return (
       <div className="w-full h-screen flex flex-col items-center bg-primary-black text-text-primary">
         <div className="flex mt-4 w-[100%] items-center justify-center">
@@ -180,7 +173,7 @@ export default function Home() {
                     decimalSeparator="."
                     prefix="lt "
                     placeholder="Quantidade"
-                    decimalScale={3}
+                    decimalScale={2}
                     {...rest}
                     onChange={(e) => {
                       setQuantityValue(e.target.value);
@@ -199,7 +192,7 @@ export default function Home() {
                     decimalSeparator="."
                     prefix="kg "
                     placeholder="Quantidade"
-                    decimalScale={3}
+                    decimalScale={2}
                     {...rest}
                     onChange={(e) => {
                       setQuantityValue(e.target.value);
@@ -221,7 +214,7 @@ export default function Home() {
                   decimalSeparator="."
                   prefix="R$ "
                   placeholder="Quantidade"
-                  decimalScale={3}
+                  decimalScale={2}
                   {...rest}
                   onChange={(e) => {
                     setPrice(e.target.value);
@@ -244,7 +237,11 @@ export default function Home() {
             )}
             <div className="flex w-full items-center mt-8 gap-2 justify-center">
               {perishable ? (
-                <ImCheckboxChecked onClick={() => setPerishable(false)} />
+                <ImCheckboxChecked
+                  onClick={() => {
+                    setPerishable(false), console.log(perishable);
+                  }}
+                />
               ) : (
                 <ImCheckboxUnchecked onClick={() => setPerishable(true)} />
               )}
@@ -256,7 +253,8 @@ export default function Home() {
             <input
               type="date"
               className="bg-secondary-black border-gray-300 text-gray-900 text-sm outline-none rounded-lg focus:border-2 focus:border-blue-primary block w-full p-2.5"
-              required
+              required={perishable == true ? true : false}
+              disabled={perishable == true ? false : true}
               {...register("maturity")}
             />
             {errors.maturity && (
@@ -267,6 +265,24 @@ export default function Home() {
             </div>
           </div>
         </form>
+      </div>
+    );
+  }
+
+  if (hamburguer === true) {
+    return (
+      <div>
+        <div className="w-full h-screen bg-primary-black text-text-primary flex flex-col items-center justify-center">
+          <h1
+            onClick={() => setHamburguer(false)}
+            className="m-4 text-[36px] hover:text-blue-primary hover:cursor-pointer hover:scale-110 duration-200"
+          >
+            Formulario
+          </h1>
+          <h1 className="m-4 text-[36px] hover:text-blue-primary hover:cursor-pointer hover:scale-110 duration-200">
+            <Link href="/list">Lista</Link>
+          </h1>
+        </div>
       </div>
     );
   }
