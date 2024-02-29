@@ -14,6 +14,7 @@ const config: Config = {
       "text-secondary": "#909090",
       "blue-primary": "#1d97d9",
       "blue-secondary": "#4D9BC6",
+      "red-error": "#CC1F00",
     },
     extend: {
       backgroundImage: {},
