@@ -1,7 +1,11 @@
 import List from "@/pages/List";
 
 function page() {
-  return <List />;
+  return (
+    <div>
+      <List />
+    </div>
+  );
 }
 
 export default page;

@@ -15,11 +15,12 @@ const config: Config = {
       "blue-primary": "#1d97d9",
       "blue-secondary": "#4D9BC6",
       "red-error": "#CC1F00",
+      "scroll-bar-blue": "#010174",
     },
     extend: {
       backgroundImage: {},
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };
 export default config;

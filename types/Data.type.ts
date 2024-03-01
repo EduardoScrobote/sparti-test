@@ -1,3 +1,5 @@
+import { FieldValues } from "react-hook-form";
+
 export type DataProp = {
   manufacturing: string;
   maturity: string;
@@ -5,5 +7,4 @@ export type DataProp = {
   product: string;
   quantityValue: string;
   price: string;
-  unity: string;
 };
