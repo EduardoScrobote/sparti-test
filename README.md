@@ -66,6 +66,10 @@ Você também podera visualizar uma lista com todos seus itens e seus detalhes t
 
 Para isso você tera acesso a duas páginas, uma página de formulario, e uma página de visualização dos itens adicionados a sua lista!
 
+## Acesso aos assets do Figma!
+
+A aplicação foi totalmente planejada e prototipada no Figma, para acessar o figma e ver como foi feito clique no link a seguir: https://www.figma.com/file/SLEA3lKzJCu4IPcmYv35Wr/front-end---SPARTI?type=design&mode=design&t=j0vqTduMGz1gYFuJ-1
+
 
 ## Agradecimentos
 
