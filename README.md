@@ -39,7 +39,7 @@ Este projeto foi desenvolvido como parte de um teste técnico para a vaga de est
 - Para começar clone o projeto em sua máquina, utilizando o comando em seu terminal : 
     git clone git@github.com:EduardoScrobote/sparti-test.git.
 
-- Após isso utilize o comando cd sparti-test.
+- Após isso utilize o comando cd sparti-test para entrar na pasta que acabou de ser clonada em sua maquina.
 - Depois de entrar na pasta utilizando o comando (cd sparti-test) execute o comando
     npm install para instalar todas as dependências do projeto.
 - Então após a instalação das dependências você pode digitar o comando npm run build para buildar do aplicativo dentro da sua máquina.
