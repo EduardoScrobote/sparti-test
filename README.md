@@ -48,7 +48,7 @@ Este projeto foi desenvolvido como parte de um teste técnico para a vaga de est
 
 ## Disponibilidade de acesso sem download
 
-A aplicação também foi disponibilizada na web com a vercel, você pode acessala através do link a seguir --> https://sparti-test.vercel.app .
+A aplicação também foi disponibilizada na web com a vercel, você pode acessar através do link a seguir --> https://sparti-test.vercel.app .
 
 - Basta apenas abrir para poder testar o APP, muito mais simples... :)
 ## Funcionalidades
