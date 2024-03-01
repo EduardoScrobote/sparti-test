@@ -43,7 +43,7 @@ Este projeto foi desenvolvido como parte de um teste técnico para a vaga de est
 - Depois de entrar na pasta utilizando o comando (cd sparti-test) execute o comando
     npm install para instalar todas as dependências do projeto.
 - Então após a instalação das dependências você pode digitar o comando npm run build para buildar do aplicativo dentro da sua máquina.
-- E por fim escrava o comando npm run start, e espere ele ser completo, então abra seu navegador e cole a seguinte url na barra de pesquisa do navegador http://localhost:3000/
+- E por fim escreva o comando npm run start, e espere ele ser completo, então abra seu navegador e cole a seguinte url na barra de pesquisa do navegador http://localhost:3000/
 
 
 ## Disponibilidade de acesso sem download
