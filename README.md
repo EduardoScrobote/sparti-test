@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Teste técnico Sparti - Health Innovation
 
-First, run the development server:
+Este projeto foi desenvolvido como parte de um teste técnico para a vaga de estágio em desenvolvimento front-end na Sparti, demonstrando minhas habilidades em
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+● NextJs 14
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+● HTML 5
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+● CSS
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+● TypeScript / JavaScript
 
-## Learn More
+● Rotas
 
-To learn more about Next.js, take a look at the following resources:
+● Utilização de LocalStorage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+● Tailwind CSS
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+● Usabilidade e experiência de uso
 
-## Deploy on Vercel
+● Responsividade (deve ser ajustável a diferentes tamanhos de tela)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+● Padrão visual;
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+● Qualidade
+
+● Clareza
+
+● Documentação
+
+● Reutilização (criação de componentes) 
+
+
+
+
+## Instalação e Execução
+
+- Para começar clone o projeto em sua máquina, utilizando o comando em seu terminal : 
+    git clone git@github.com:EduardoScrobote/sparti-test.git.
+
+- Após isso utilize o comando cd sparti-test.
+- Depois de entrar na pasta utilizando o comando (cd sparti-test) execute o comando
+    npm install para instalar todas as dependências do projeto.
+- Então após a instalação das dependências você pode digitar o comando npm run build para buildar do aplicativo dentro da sua máquina.
+- E por fim escrava o comando npm run start, e espere ele ser completo, então abra seu navegador e cole a seguinte url na barra de pesquisa do navegador http://localhost:3000/
+
+
+## Disponibilidade de acesso sem download
+
+A aplicação também foi disponibilizada na web com a vercel, você pode acessala através do link a seguir --> https://sparti-test.vercel.app .
+
+- Basta apenas abrir para poder testar o APP, muito mais simples... :)
+## Funcionalidades
+
+A nossa aplicação é utilizada para salvar produtos, e descrever suas caracteristicas principais sendo eles: 
+
+- Produto (Maça, Banana, ETC...)
+- Valor
+- Unidade de medida (Peso(KG), Litro(lt), Unidade(Un))
+- Fabricação
+- Checagem de produto perecivel(Check box)
+- Validade (Caso checagem aceita)
+
+Para isso você tera acesso a duas páginas, uma página de formulario, e uma página de visualização dos itens adicionados a sua lista!
+
+
+## Agradecimentos
+
+Sou grato pela oportunidade, e este projeto me deu a oportunidade de aprender mais e sair da zona de conforto, foi um grande prazer realizar está taréfa mesmo com todas as dificuldades. Espero alcançar os resultados desejados!!
