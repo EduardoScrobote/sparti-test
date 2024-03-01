@@ -8,7 +8,7 @@ function Header() {
         <Link href="/">Formulario</Link>
       </h1>
       <h1 className="text-[24px] hover:text-blue-primary hover:cursor-pointer hover:scale-110 duration-300">
-        <Link href="/list">List</Link>
+        <Link href="/list">Lista</Link>
       </h1>
     </div>
   );
