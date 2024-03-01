@@ -53,18 +53,20 @@ A aplicação também foi disponibilizada na web com a vercel, você pode acessa
 - Basta apenas abrir para poder testar o APP, muito mais simples... :)
 ## Funcionalidades
 
-A nossa aplicação é utilizada para salvar produtos, e descrever suas caracteristicas principais sendo eles: 
+A aplicação é utilizada para salvar produtos, e descrever suas caracteristicas principais sendo eles: 
 
-- Produto (Maça, Banana, ETC...)
+- Produto (Maça, Banana, Leite, ETC...)
 - Valor
 - Unidade de medida (Peso(KG), Litro(lt), Unidade(Un))
 - Fabricação
-- Checagem de produto perecivel(Check box)
+- Checagem de produto perecivel (Check box)
 - Validade (Caso checagem aceita)
+
+Você também podera visualizar uma lista com todos seus itens e seus detalhes tanto no seu celular, quanto em seu computador.
 
 Para isso você tera acesso a duas páginas, uma página de formulario, e uma página de visualização dos itens adicionados a sua lista!
 
 
 ## Agradecimentos
 
-Sou grato pela oportunidade, e este projeto me deu a oportunidade de aprender mais e sair da zona de conforto, foi um grande prazer realizar está taréfa mesmo com todas as dificuldades. Espero alcançar os resultados desejados!!
+Sou grato pela oportunidade, este projeto me fez aprender mais coisas super legais e também sair da zona de conforto, foi um grande prazer realizar está taréfa mesmo com todas as dificuldades. Espero alcançar os resultados desejados!!
