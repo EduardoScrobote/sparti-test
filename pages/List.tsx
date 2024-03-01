@@ -48,7 +48,7 @@ function List() {
           </div>
           <h1 className="text-[32px] font-bold">Sparti List</h1>
         </div>
-        <div className="w-full h-auto overflow-y-scroll flex-col flex">
+        <div className="w-full h-auto overflow-hidden flex-col flex">
           {convertedData ? (
             <div>
               {" "}

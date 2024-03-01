@@ -107,10 +107,8 @@ export default function Home() {
     return (
       <div className="w-full h-screen flex flex-col items-center bg-primary-black text-text-primary">
         {success === true ? (
-          <div className="flex justify-center transition ease-in  duration-300 mt-16 absolute w-full h-screen">
-            <div className="w-[16rem] rounded-lg mt-4 transition ease-in  duration-300 bg-[#198754] items-center justify-center flex h-[75px]">
-              <h1 className="select-none">Produto Salvo</h1>
-            </div>
+          <div className="w-[16rem] mt-4 absolute rounded-lg transition ease-in  duration-300 bg-[#198754] items-center justify-center flex h-[75px]">
+            <h1 className="select-none">Produto Salvo</h1>
           </div>
         ) : null}
         <div className="flex mt-4 w-[100%] items-center justify-center">
@@ -315,10 +313,8 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full h-screen text-text-primary bg-primary-black">
       {success === true ? (
-        <div className="flex justify-center transition ease-in  duration-300 mt-16 absolute w-full h-screen">
-          <div className="w-[16rem] rounded-lg mt-4 transition ease-in  duration-300 bg-[#198754] items-center justify-center flex h-[75px]">
-            <h1 className="select-none">Produto Salvo</h1>
-          </div>
+        <div className="w-[16rem] mt-4 absolute self-center rounded-lg transition ease-in  duration-300 bg-[#198754] items-center justify-center flex h-[75px]">
+          <h1 className="select-none">Produto Salvo</h1>
         </div>
       ) : null}
       <Header />
